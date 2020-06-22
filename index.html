@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="./css/simplePagination copy.css">
+    <link rel="stylesheet" href="./css/jquery-ui.min.css">
+    <link rel="stylesheet" href="./css/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="./css/jquery-ui.theme.min.css">
+    <link rel="stylesheet" href="./css/fontawesome-free-5.11.2-web/css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <title>Marvel App</title>
+</head>
+
+<body>
+    <div id="fondoBanner">
+        <div id="iconoMarvel"></div>
+    </div>    
+    <div class="container-fluid">
+        <!-- BARRA DE NAVEGACIÓN PESTAÑAS -->
+        <ul class="nav nav-tabs justify-content-center my-2" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="inicio-tab" data-toggle="tab" href="#inicio" role="tab"
+                    aria-controls="inicio" aria-selected="true">Intro</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="comics-tab" data-toggle="tab" href="#comics" role="tab" aria-controls="comics"
+                    aria-selected="false">Comics</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="personajes-tab" data-toggle="tab" href="#personajes" role="tab"
+                    aria-controls="personajes" aria-selected="false">Characters</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="buscador-tab" data-toggle="tab" href="#buscador" role="tab"
+                    aria-controls="buscador" aria-selected="false">Searcher</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="contacto-tab" data-toggle="tab" href="#contacto" role="tab"
+                    aria-controls="contacto" aria-selected="false">Contact</a>
+            </li>
+        </ul>
+
+        <!-- ===================== CONTENIDO ==================-->
+        <div class="tab-content">
+            <!-- =============== EXTRAS ==================== -->
+            <div class="tab-pane active" id="inicio" role="tabpanel" aria-labelledby="inicio-tab">
+                <div class="d-flex justify-content-center">
+                    <div id="contenedor-inicio" class="row row-cols-sm-1 row-cols-md-3">
+                        <!-- Se rellena con el script -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===================== COMICS Y PERSONAJES ================== -->
+            <div class="tab-pane" id="comics" role="tabpanel" aria-labelledby="comics-tab">
+                <div class="d-flex justify-content-center">
+                    <div id="contenedor-comic" class="p-3 row row-cols-1 row-cols-md-6">
+                        <!-- Se rellena con el script -->
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane" id="personajes" role="tabpanel" aria-labelledby="personajes-tab">
+                <div class="d-flex justify-content-center">
+                    <div id="contenedor-personaje" class="p-3 row row-cols-1 row-cols-md-6">
+                        <!-- Se rellena con el script -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================== BUSCADOR ========================== -->
+            <div class="tab-pane" id="buscador" role="tabpanel" aria-labelledby="buscador-tab">
+                <form class="form-inline d-flex justify-content-center my-3">
+                    <label for="selectTipo">Category</label>
+                    <select class="form-control mb-6 mx-5" name="selectTipo" id="selectTipo">
+                        <option value="comics" selected>Comics</option>
+                        <option value="characters">Characters</option>
+                    </select>
+                    <div id="control-input" class="form-group mb-6 mx-5">
+                        <label for="nombreIn" class="mx-2">Name / Title</label>
+                        <input type="text" class="form-control" id="nombreIn" aria-describedby="nombreInHelp" required>
+                        <small id="nombreInHelp" class="form-text text-danger text-muted mx-1">Enter a name or title to search.</small>
+                    </div>
+                    <button type="button" id="botonForm" class="btn btn-primary btn-danger mb-2">Search</button>
+                </form>
+                <div id="contenedor-busqueda" class="p-3 row row-cols-1 row-cols-md-6">
+                    <!-- Se rellena con el script -->
+                </div>
+            </div>
+
+            <div class="tab-pane" id="contacto" role="tabpanel" aria-labelledby="contacto-tab">
+                <div class="d-flex justify-content-center">
+                    <div id="card-contacto" class="card my-3" style="width: 20rem;">
+                        <img src="./img/perfil.jpeg" class="card-img-top rounded-circle p-3" alt="imagen-programadora">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Cristina Darias</h5>
+                            <p class="card-text">
+                                <div class="d-flex justify-content-center">
+                                    <a class="fab fa-twitter fa-2x mx-1" href="https://twitter.com/CristinaDarias"></a>
+                                    <a class="fab fa-instagram fa-2x mx-1"
+                                        href="https://www.instagram.com/cristinadarias/?hl=es"></a>
+                                    <a class="fab fa-github fa-2x mx-1" href="https://github.com/CristinaDarias"></a>
+                                    <a class="fab fa-linkedin-in fa-2x mx-1"
+                                        href="https://www.linkedin.com/in/cristina-morales-darias-2a1a98174/"></a>
+                                </div>
+                                <p class="d-flex justify-content-center my-2">@CristinaDarias</p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="pagination"></div>
+        </div>
+    </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="./js/jquery.simplePagination.js"></script>
+    <script src="./js/main.js" type="module"></script>
+</body>
+
+</html>
